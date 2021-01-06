@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// Test Comment
+
 struct ProjectsView: View {
     
     let showClosedProjects: Bool
