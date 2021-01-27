@@ -18,6 +18,8 @@
 		60752D272551A28E00306899 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60752D262551A28E00306899 /* DataController.swift */; };
 		608AAC9825A5E6FC0069DFE0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608AAC9725A5E6FC0069DFE0 /* HomeView.swift */; };
 		608AAC9B25A5E7C80069DFE0 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608AAC9A25A5E7C80069DFE0 /* ProjectsView.swift */; };
+		60E2899625C19A5700E999EF /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E2899525C19A5700E999EF /* ItemRowView.swift */; };
+		60E2899925C1AA6B00E999EF /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E2899825C1AA6B00E999EF /* Binding-OnChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		60752D262551A28E00306899 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		608AAC9725A5E6FC0069DFE0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		608AAC9A25A5E7C80069DFE0 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		60E2899525C19A5700E999EF /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		60E2899825C1AA6B00E999EF /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +73,10 @@
 				600EFA242549AB71006EE9C1 /* SwiftPortfolioApp.swift */,
 				600EFA262549AB71006EE9C1 /* ContentView.swift */,
 				60326F7D25AF38D1002D4559 /* EditItemView.swift */,
+				60E2899825C1AA6B00E999EF /* Binding-OnChange.swift */,
 				608AAC9725A5E6FC0069DFE0 /* HomeView.swift */,
 				608AAC9A25A5E7C80069DFE0 /* ProjectsView.swift */,
+				60E2899525C19A5700E999EF /* ItemRowView.swift */,
 				60326F7725AF2582002D4559 /* Item-CoreDataHelpers.swift */,
 				60326F7A25AF26FE002D4559 /* Project-CoreDateHelpers.swift */,
 				60752D262551A28E00306899 /* DataController.swift */,
@@ -163,7 +169,9 @@
 				60752D2425519F9600306899 /* Main.xcdatamodeld in Sources */,
 				60752D272551A28E00306899 /* DataController.swift in Sources */,
 				600EFA272549AB71006EE9C1 /* ContentView.swift in Sources */,
+				60E2899625C19A5700E999EF /* ItemRowView.swift in Sources */,
 				608AAC9825A5E6FC0069DFE0 /* HomeView.swift in Sources */,
+				60E2899925C1AA6B00E999EF /* Binding-OnChange.swift in Sources */,
 				600EFA252549AB71006EE9C1 /* SwiftPortfolioApp.swift in Sources */,
 				60326F7B25AF26FE002D4559 /* Project-CoreDateHelpers.swift in Sources */,
 				60326F7825AF2582002D4559 /* Item-CoreDataHelpers.swift in Sources */,

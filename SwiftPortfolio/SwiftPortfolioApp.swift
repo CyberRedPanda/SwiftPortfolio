@@ -17,12 +17,17 @@ struct SwiftPortfolioApp: App {
         _dataController = StateObject(wrappedValue: dataController)
     }
     
+    func save(_ note: Notification) {
+        dataController.save()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
                 // send data controller in to allow code to manipulate it
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
+                .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification), perform: save)
         }
     }
 }

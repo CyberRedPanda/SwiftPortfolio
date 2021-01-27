@@ -25,8 +25,36 @@ struct EditItemView: View {
     @State private var priority: Int
     @State private var completed: Bool
     
+    func update() {
+        item.project?.objectWillChange.send()
+        item.title = title
+        item.detail = detail
+        item.priority = Int16(priority)
+        item.completed = completed
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            Section(header: Text("Basic settings")) {
+                TextField("Item name", text: $title.onChange(update))
+                TextField("Description", text: $detail.onChange(update))
+            }
+            
+            Section(header: Text("Priority")) {
+                Picker("Priority", selection: $priority.onChange(update)) {
+                    Text("Low").tag(1)
+                    Text("Medium").tag(2)
+                    Text("High").tag(3)
+                }
+                .pickerStyle(SegmentedPickerStyle())
+            }
+            
+            Section {
+                Toggle("Mark Completed", isOn: $completed.onChange(update))
+            }
+        }
+        .navigationTitle("Edit Item")
+        .onDisappear(perform: dataController.save)
     }
 }
 
