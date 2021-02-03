@@ -18,6 +18,8 @@ extension Project {
         title ?? ""
     }
     
+    static let colors = ["Pink", "Purple", "Red", "Orange", "Gold", "Green", "Teal", "Light Blue", "Dark Blue", "Midnight", "Dark Gray", "Gray"]
+    
     // return items sorted by completionStatus, priority, and then creationDate
     var projectItems: [Item] {
         let itemsArray = items?.allObjects as? [Item] ?? []
